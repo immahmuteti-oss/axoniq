@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Axoniq Cyber</title>
+<meta name="description" content="WhatsApp, phone, email or the form. Tell me your website address and what's going wrong, and I'll send back a three-minute audit.">
+<meta name="theme-color" content="#0A0E14">
+<link rel="canonical" href="https://immahmuteti-oss.github.io/axoniq/contact.html">
+<meta property="og:site_name" content="Axoniq Cyber">
+<meta property="og:title" content="Contact — Axoniq Cyber">
+<meta property="og:description" content="WhatsApp is fastest. Tell me your website address and what's going wrong.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://immahmuteti-oss.github.io/axoniq/contact.html">
+<meta property="og:image" content="https://immahmuteti-oss.github.io/axoniq/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://immahmuteti-oss.github.io/axoniq/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0E14'/><path d='M6 22 L16 8 L26 22' stroke='%23E8A33D' stroke-width='2.5' fill='none'/><circle cx='16' cy='19' r='2.5' fill='%23E8A33D'/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="rail" aria-label="Main">
+  <svg class="rail-glyph" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M5 24 L16 7 L27 24" stroke="#E8A33D" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+    <circle cx="16" cy="20" r="2.6" fill="#E8A33D"/>
+  </svg>
+  <a class="rail-mark" href="index.html">Axoniq</a>
+  <div class="rail-nav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="diaspora.html">Diaspora</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </div>
+  <div class="rail-status">
+    <span class="dot" aria-hidden="true"></span>
+    <span>Ruiru · Nairobi</span>
+  </div>
+</nav>
+
+<div class="shell" id="top">
+
+  <header class="phead">
+    <div class="wrap">
+      <span class="label label-signal">Contact</span>
+      <h1>WhatsApp is <em>fastest</em>. Everything else works too.</h1>
+      <p class="lede">
+        Tell me your website address and what's going wrong. If you'd rather I just looked
+        first, send the address on its own — <strong>I'll send back three minutes of video
+        showing you what I find, at no charge.</strong>
+      </p>
+      <div class="actions" style="margin-top:32px">
+        <a class="btn" data-wa="Hi Emmanuel — my website is: " data-wa-label="contact-hero">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.2 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.2-5-4.4-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.5-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3.1.2.1.7-.1 1.4Z"/></svg>
+          Open WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="tel:+254740562812">Call +254 740 562 812</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="label label-signal">Or write it here</span>
+        <h2>Send me the details</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+
+      <form class="form" data-enquiry name="enquiry" method="POST" data-netlify="true" netlify-honeypot="_hp">
+        <input type="hidden" name="form-name" value="enquiry">
+        <p class="hp"><label>Leave this empty <input name="_hp"></label></p>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="business">Business name</label>
+          <input id="business" name="business" type="text" autocomplete="organization">
+        </div>
+
+        <div class="field">
+          <label for="website">Website address</label>
+          <input id="website" name="website" type="text" inputmode="url" placeholder="yourbusiness.co.ke">
+          <span class="hint">Don't have one? Leave it blank — that's often the whole problem.</span>
+        </div>
+
+        <div class="field">
+          <label for="contact">Phone or email to reach you</label>
+          <input id="contact" name="contact" type="text" autocomplete="tel" required>
+        </div>
+
+        <div class="field">
+          <label for="need">What do you need</label>
+          <select id="need" name="need">
+            <option value="audit">The free 3-minute audit</option>
+            <option value="fix">Something is broken — same-day fix</option>
+            <option value="google">Found on Google</option>
+            <option value="page">A conversion page</option>
+            <option value="engine">A full lead engine</option>
+            <option value="diaspora">Diaspora / overseas buyers</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">What's going wrong</label>
+          <textarea id="message" name="message" placeholder="Be as specific as you like. &quot;The form doesn&#39;t send&quot; is more useful than &quot;we need marketing&quot;."></textarea>
+        </div>
+
+        <div class="form-status" role="status" aria-live="polite"></div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Send it</button>
+        </div>
+
+        <p class="note" style="margin-top:4px">
+          I reply to everything. If it's urgent, WhatsApp will always be faster than this form —
+          and if this form ever fails to send, it will hand your message straight to WhatsApp
+          rather than losing it. <strong>A business that sells lead capture doesn't get to leak
+          your enquiry.</strong>
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="label label-signal">Details</span>
+        <h2>Everything else</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="label">Reach me</span>
+          <h3>Direct</h3>
+          <p>
+            <a href="tel:+254740562812" style="color:var(--paper);text-decoration:none;border-bottom:1px solid var(--rule-hi)">+254 740 562 812</a> — call or WhatsApp<br><br>
+            <a href="mailto:sirfrancisrealty@gmail.com" style="color:var(--paper);text-decoration:none;border-bottom:1px solid var(--rule-hi);word-break:break-word">sirfrancisrealty@gmail.com</a>
+          </p>
+        </div>
+        <div class="card">
+          <span class="label">Where</span>
+          <h3>Ruiru, Nairobi</h3>
+          <p>On the Thika Road corridor. Happy to meet in person anywhere between Ruiru, Kamakis, Juja and Thika — and on video anywhere else in the world.</p>
+        </div>
+        <div class="card">
+          <span class="label">Payment</span>
+          <h3>However suits you</h3>
+          <p>M-Pesa, bank transfer or card locally. Wise, Payoneer or card for clients abroad. Half to start, half on delivery, invoiced properly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Axoniq Cyber — Emmanuel Muteti</span>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="diaspora.html">Diaspora</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+
+<script src="site.js"></script>
+</body>
+</html>

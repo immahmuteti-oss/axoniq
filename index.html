@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Axoniq Cyber — I find where your business leaks value, then build the system that catches it</title>
+<meta name="description" content="Lead capture, conversion pages, local search and automation for property companies and service businesses. Ruiru, Nairobi. Fixed price, fixed date.">
+<meta name="theme-color" content="#0A0E14">
+<link rel="canonical" href="https://immahmuteti-oss.github.io/axoniq/">
+<meta property="og:site_name" content="Axoniq Cyber">
+<meta property="og:title" content="Most businesses don't lose customers. They leak them.">
+<meta property="og:description" content="I map where value enters your business and where it escapes, then build the system that catches it. Ruiru, Nairobi.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://immahmuteti-oss.github.io/axoniq/">
+<meta property="og:image" content="https://immahmuteti-oss.github.io/axoniq/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://immahmuteti-oss.github.io/axoniq/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0E14'/><path d='M6 22 L16 8 L26 22' stroke='%23E8A33D' stroke-width='2.5' fill='none'/><circle cx='16' cy='19' r='2.5' fill='%23E8A33D'/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="rail" aria-label="Main">
+  <svg class="rail-glyph" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M5 24 L16 7 L27 24" stroke="#E8A33D" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+    <circle cx="16" cy="20" r="2.6" fill="#E8A33D"/>
+  </svg>
+  <a class="rail-mark" href="index.html">Axoniq</a>
+  <div class="rail-nav">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="diaspora.html">Diaspora</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="rail-status">
+    <span class="dot" aria-hidden="true"></span>
+    <span>Ruiru · Nairobi</span>
+  </div>
+</nav>
+
+<div class="shell" id="top">
+
+  <header class="hero">
+    <canvas id="flow" data-capture="0.68" aria-hidden="true"></canvas>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-eyebrow">
+        <span class="tick" aria-hidden="true"></span>
+        <span class="label label-signal">Axoniq Cyber</span>
+        <span class="label">Lead systems · Automation · Security</span>
+      </div>
+
+      <h1 class="thesis">Most businesses don't lose customers. They <em>leak</em> them.</h1>
+
+      <p class="hero-sub">
+        Every enquiry that goes unanswered, every form that quietly fails, every buyer who
+        can't find you — that's revenue draining out of a system nobody instrumented.
+        <strong>I map where value enters your business and where it escapes, then build the
+        system that catches it.</strong>
+      </p>
+
+      <div class="actions">
+        <a class="btn" data-wa="Hi Emmanuel — I found your site and I'd like to talk about my business." data-wa-label="hero">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.2 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.2-5-4.4-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.5-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3.1.2.1.7-.1 1.4Z"/></svg>
+          Message me on WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="work.html">See the work</a>
+      </div>
+
+      <div class="readout">
+        <div><b class="v-cap" id="n-cap">0</b><small>Captured</small></div>
+        <div><b class="v-leak" id="n-leak">0</b><small>Leaked</small></div>
+        <div><b class="mono" id="n-rate" style="color:var(--paper)">—</b><small>Simulated</small></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ THE LEAKS ============ -->
+  <section class="band">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="label label-signal">Diagnosis</span>
+        <h2>Where the money actually goes</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="leaks">
+        <article class="leak">
+          <span class="label">Silent failure</span>
+          <h3>The form that never sends</h3>
+          <p>A contact form breaks and nothing announces it. Customers type, press send, and assume you ignored them. It can run broken for months.</p>
+        </article>
+        <article class="leak">
+          <span class="label">Invisibility</span>
+          <h3>They search, you're not there</h3>
+          <p>Someone looks for exactly what you sell. Three competitors appear, stacked with photos and reviews. You're on page two, or nowhere.</p>
+        </article>
+        <article class="leak">
+          <span class="label">Latency</span>
+          <h3>The reply that came too late</h3>
+          <p>An enquiry arrives at 9pm and gets answered on Tuesday. By then they've bought elsewhere. Speed of response is a conversion rate.</p>
+        </article>
+        <article class="leak">
+          <span class="label">Blind spot</span>
+          <h3>Nobody is counting</h3>
+          <p>No record of how many enquiries came in, from which channel, or how many turned into money. You cannot fix a number you never see.</p>
+        </article>
+      </div>
+      <p class="note" style="margin-top:30px">
+        <strong>Not sure which one is yours?</strong> Tell me your website address and I'll
+        record a three-minute video showing you exactly what happens when a customer tries to
+        reach you. No charge, no meeting.
+        <a class="visit" data-wa="Hi Emmanuel — can you check my site and send me the 3-minute video? My website is:" data-wa-label="audit-offer-home" style="display:block;margin-top:12px">Ask for the 3-minute audit →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROOF ============ -->
+  <section class="band">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="label label-signal">Proof</span>
+        <h2>Built and live, not mocked up</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="label">Property · live</span>
+          <h3>Sir Francis Homes</h3>
+          <p>Four property landing pages with lead capture wired to WhatsApp, CRM and email — plus Google and Meta campaigns, conversion tracking, and structured data across the listing catalogue.</p>
+          <a class="visit" href="work.html">Read what was built →</a>
+        </div>
+        <div class="card">
+          <span class="label">Medical · live</span>
+          <h3>FemGyn</h3>
+          <p>Site rebuild and local-search rescue for a private practice — a second industry, which is how you can tell the method travels rather than the template.</p>
+          <a class="visit" href="work.html">Read what was built →</a>
+        </div>
+        <div class="card">
+          <span class="label">Method</span>
+          <h3>I diagnose before I quote</h3>
+          <p>Every engagement starts with an audit of your actual site on an actual phone. You see the problem before you hear a price — and if there's nothing wrong, I'll tell you that too.</p>
+          <a class="visit" href="services.html">See prices →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEQUENCE (numbered: order is real) ============ -->
+  <section class="band">
+    <div class="wrap">
+      <div class="band-head">
+        <span class="label label-signal">How an engagement runs</span>
+        <h2>Four steps, in this order</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="seq">
+        <div class="step"><span class="step-n">01</span><h3>Diagnose</h3><p>I map your operation — where enquiries enter, where they stall, where they vanish. On your real site, on a real phone. Never from a template.</p></div>
+        <div class="step"><span class="step-n">02</span><h3>Fix the leak first</h3><p>The cheapest repair that stops money escaping happens before anything is rebuilt. There's no point pouring traffic into a bucket with a hole in it.</p></div>
+        <div class="step"><span class="step-n">03</span><h3>Build the capture</h3><p>Page, form, WhatsApp, notifications, tracking — end to end, from the customer's first tap to the alert on your phone.</p></div>
+        <div class="step"><span class="step-n">04</span><h3>Show you the numbers</h3><p>You get a plain-language report of what came in, from where, and what it turned into. If you can't see it, you can't manage it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact">
+    <div class="wrap">
+      <span class="label label-signal">Start here</span>
+      <h2 class="contact-thesis">Tell me what's <em>leaking</em>. I'll tell you what it costs to catch it.</h2>
+      <div class="actions">
+        <a class="btn" data-wa="Hi Emmanuel — I'd like to talk about my business." data-wa-label="footer-cta">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.2 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.2-5-4.4-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .6l-.4.5-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3.1.2.1.7-.1 1.4Z"/></svg>
+          Start on WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="contact.html">Send a message instead</a>
+      </div>
+      <div class="contact-grid">
+        <div><span class="label">WhatsApp &amp; phone</span><p><a href="tel:+254740562812">+254 740 562 812</a></p></div>
+        <div><span class="label">Email</span><p><a href="mailto:sirfrancisrealty@gmail.com">sirfrancisrealty@gmail.com</a></p></div>
+        <div><span class="label">Base</span><p style="color:var(--mist)">Ruiru, Nairobi — Kenya<br>Working with clients worldwide</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Axoniq Cyber — Emmanuel Muteti</span>
+      <nav>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="diaspora.html">Diaspora</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+
+<script src="site.js"></script>
+</body>
+</html>
