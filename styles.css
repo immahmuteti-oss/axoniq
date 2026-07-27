@@ -81,6 +81,21 @@ a{color:inherit}
   writing-mode:vertical-rl; transform:rotate(180deg);
 }
 
+/* Vertical text is tall. On a short window the rail's three groups collide,
+   so shed the least important one first, then tighten, then let it scroll. */
+@media (min-width:681px) and (max-height:820px){
+  .rail-nav{gap:16px}
+}
+@media (min-width:681px) and (max-height:700px){
+  .rail-status{display:none}
+  .rail-nav{gap:13px}
+  .rail-nav a{font-size:10px; letter-spacing:.18em}
+}
+@media (min-width:681px) and (max-height:560px){
+  .rail{justify-content:flex-start; gap:18px; overflow-y:auto; overflow-x:hidden}
+  .rail::-webkit-scrollbar{width:0}
+}
+
 /* ---------- shell ---------- */
 .shell{margin-left:var(--rail)}
 .wrap{max-width:var(--maxw); margin:0 auto; padding:0 var(--pad)}
