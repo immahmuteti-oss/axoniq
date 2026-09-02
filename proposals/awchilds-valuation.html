@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A design concept prepared by Axoniq Cyber for AW Childs. This is not an official site.">
+<meta name="author" content="Axoniq Cyber">
+<title>Free Valuation — AW Childs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --ground:#EDEAE4;
+  --surface:#FFFFFF;
+  --surface-2:#E2DED6;
+  --ink:#191B1E;
+  --ink-soft:#43484D;
+  --muted:#6B7178;
+  --line:#D2CCC2;
+  --accent:#A8431C;
+  --accent-soft:#C25A2E;
+  --accent-ink:#FFFFFF;
+  --deep:#24352C;
+  --deep-ink:#E8EFE9;
+  --concrete:#B9B3A8;
+  --notice-bg:#FBEFE0;
+  --notice-ink:#6A3B12;
+  --notice-line:#E0BE93;
+
+  --f-display:"Instrument Serif","Iowan Old Style",Georgia,"Times New Roman",serif;
+  --f-body:"Archivo","Helvetica Neue",Arial,sans-serif;
+
+  --wrap:70rem;
+  --read:35rem;
+  --r:4px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#131518;
+    --surface:#1B1E22;
+    --surface-2:#23272C;
+    --ink:#ECEAE5;
+    --ink-soft:#B9BDC1;
+    --muted:#8B9198;
+    --line:#2F353B;
+    --accent:#E1794A;
+    --accent-soft:#EE9264;
+    --accent-ink:#1A0E07;
+    --deep:#8FB39C;
+    --deep-ink:#101713;
+    --concrete:#3A4046;
+    --notice-bg:#2C2114;
+    --notice-ink:#F3D6AE;
+    --notice-line:#60472A;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#131518;
+  --surface:#1B1E22;
+  --surface-2:#23272C;
+  --ink:#ECEAE5;
+  --ink-soft:#B9BDC1;
+  --muted:#8B9198;
+  --line:#2F353B;
+  --accent:#E1794A;
+  --accent-soft:#EE9264;
+  --accent-ink:#1A0E07;
+  --deep:#8FB39C;
+  --deep-ink:#101713;
+  --concrete:#3A4046;
+  --notice-bg:#2C2114;
+  --notice-ink:#F3D6AE;
+  --notice-line:#60472A;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--f-body);font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.08;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.15rem,4vw,2.5rem)}
+.eyebrow{
+  font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);margin:0;
+}
+
+/* ---------- proposal notice ---------- */
+.proposal{
+  position:sticky;top:0;z-index:60;
+  background:var(--notice-bg);color:var(--notice-ink);
+  border-bottom:1px solid var(--notice-line);
+  font-size:.82rem;line-height:1.45;
+}
+.proposal .wrap{display:flex;gap:.85rem;align-items:flex-start;padding-block:.7rem}
+.proposal .tag{
+  flex:none;font-size:.63rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  border:1px solid currentColor;border-radius:999px;padding:.2rem .55rem;margin-top:.12rem;
+}
+.proposal b{font-weight:700}
+.proposal a{font-weight:700;text-underline-offset:3px}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--line);background:var(--surface)}
+.mast .wrap{display:flex;flex-wrap:wrap;gap:1rem;align-items:baseline;justify-content:space-between;padding-block:1.1rem}
+.brand{font-family:var(--f-display);font-size:1.5rem;letter-spacing:.01em}
+.brand span{color:var(--accent)}
+.mast nav{display:flex;flex-wrap:wrap;gap:1.3rem;font-size:.83rem;font-weight:500;color:var(--ink-soft)}
+.mast nav a{text-decoration:none}
+.mast nav a:hover{color:var(--accent)}
+
+/* ---------- hero: the form IS the hero ---------- */
+.hero{position:relative;background:var(--deep);color:var(--deep-ink);overflow:hidden}
+/* Barbican-ish concrete grid, drawn in CSS — no images available for a concept */
+.hero::before{
+  content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
+  background-image:
+    repeating-linear-gradient(90deg, currentColor 0 1px, transparent 1px 78px),
+    repeating-linear-gradient(0deg, currentColor 0 1px, transparent 1px 78px);
+}
+.hero .wrap{
+  position:relative;display:grid;gap:clamp(2rem,5vw,3.5rem);
+  grid-template-columns:1fr;padding-block:clamp(3rem,8vw,5rem);
+}
+@media (min-width:60rem){ .hero .wrap{grid-template-columns:1fr 27rem;align-items:start} }
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.15rem)}
+.hero h1 em{font-style:italic;color:var(--deep-ink);opacity:.85}
+.hero .eyebrow{color:var(--deep-ink);opacity:.72}
+.hero-lede{max-width:var(--read);font-size:1.06rem;opacity:.9;margin-top:1.1rem}
+.assure{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem;list-style:none;padding:0}
+.assure li{
+  font-size:.78rem;font-weight:600;letter-spacing:.02em;
+  border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:.35rem .8rem;
+}
+:root[data-theme="dark"] .assure li,
+:root:not([data-theme="light"]) .assure li{border-color:rgba(0,0,0,.28)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .assure li{border-color:rgba(255,255,255,.32)}}
+
+/* ---------- form ---------- */
+.card{
+  background:var(--surface);color:var(--ink);
+  border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(1.3rem,3vw,1.9rem);
+  display:flex;flex-direction:column;gap:1rem;
+  box-shadow:0 18px 44px rgba(0,0,0,.16);
+}
+.card h2{font-size:1.6rem}
+.card .sub{font-size:.9rem;color:var(--muted)}
+.fields{display:grid;grid-template-columns:1fr;gap:.8rem}
+.fields.two{grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr))}
+label{display:flex;flex-direction:column;gap:.3rem;font-size:.73rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft)}
+input,select,textarea{
+  font-family:var(--f-body);font-size:1rem;color:var(--ink);
+  background:var(--ground);border:1px solid var(--line);border-radius:var(--r);
+  padding:.68rem .75rem;width:100%;
+}
+textarea{resize:vertical;min-height:4.5rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-family:var(--f-body);font-size:.97rem;font-weight:700;
+  padding:.85rem 1.4rem;border-radius:var(--r);border:1px solid transparent;
+  text-decoration:none;cursor:pointer;
+  transition:transform .15s ease,background-color .15s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:var(--accent-ink)}
+.btn-accent:hover{background:var(--accent-soft)}
+.btn-line{background:transparent;color:var(--accent);border-color:var(--line)}
+.btn-line:hover{border-color:var(--accent)}
+.demo-note{font-size:.82rem;color:var(--muted)}
+.out{
+  display:none;border:1px dashed var(--notice-line);background:var(--notice-bg);color:var(--notice-ink);
+  border-radius:var(--r);padding:.85rem .95rem;font-size:.88rem;
+}
+.out.on{display:block}
+
+/* ---------- sections ---------- */
+section{padding-block:clamp(3rem,6.5vw,4.6rem)}
+.sec-head{max-width:var(--read);margin-bottom:2.1rem;display:flex;flex-direction:column;gap:.7rem}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.sec-head p{color:var(--muted)}
+.alt{background:var(--surface-2)}
+
+/* numbered because it IS a sequence — three steps in order */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.4rem;counter-reset:s}
+.step{display:flex;flex-direction:column;gap:.5rem;padding-top:1.1rem;border-top:2px solid var(--accent);counter-increment:s}
+.step h3{font-family:var(--f-body);font-weight:700;font-size:1rem;letter-spacing:.01em}
+.step h3::before{content:counter(s,decimal-leading-zero);display:block;font-family:var(--f-display);font-size:1.9rem;color:var(--accent);line-height:1;margin-bottom:.35rem}
+.step p{font-size:.94rem;color:var(--ink-soft)}
+
+.areas{display:flex;flex-wrap:wrap;gap:.55rem;list-style:none;padding:0;margin:0}
+.areas li{
+  border:1px solid var(--line);border-radius:999px;padding:.42rem .95rem;
+  font-size:.88rem;font-weight:500;background:var(--surface);
+}
+
+.listings{display:grid;grid-template-columns:repeat(auto-fit,minmax(15.5rem,1fr));gap:1.1rem}
+.listing{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:1.3rem;display:flex;flex-direction:column;gap:.45rem;
+}
+.listing .status{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.listing h3{font-family:var(--f-body);font-weight:700;font-size:1.05rem}
+.listing p{font-size:.92rem;color:var(--muted)}
+
+.quote{max-width:44rem}
+.quote p{font-family:var(--f-display);font-size:clamp(1.4rem,3vw,2rem);line-height:1.3}
+.quote .who{font-family:var(--f-body);font-size:.82rem;color:var(--muted);margin-top:1rem;letter-spacing:.04em}
+
+/* ---------- findings ---------- */
+.findings{background:var(--ink);color:var(--ground)}
+.findings .sec-head h2{color:var(--ground)}
+.findings .sec-head p{color:var(--concrete)}
+.findings .eyebrow{color:var(--accent-soft)}
+.f-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1rem}
+.f-item{border:1px solid rgba(255,255,255,.15);border-radius:var(--r);padding:1.2rem;display:flex;flex-direction:column;gap:.5rem;background:rgba(255,255,255,.04)}
+.f-item h3{font-family:var(--f-body);font-weight:700;font-size:1rem;color:#FFF}
+.f-item p{font-size:.9rem;color:var(--concrete)}
+.f-item code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82rem;background:rgba(0,0,0,.35);color:#F0C7A5;padding:.12rem .4rem;border-radius:3px;word-break:break-all}
+.f-tag{align-self:flex-start;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:.18rem .55rem}
+
+footer{background:var(--surface-2);border-top:1px solid var(--line);padding-block:2.5rem;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1.6rem;justify-content:space-between}
+footer .col{display:flex;flex-direction:column;gap:.28rem}
+footer .h{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+footer a{color:var(--ink-soft)}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="proposal">
+  <div class="wrap">
+    <span class="tag">Proposal</span>
+    <p><b>This is a design concept, not an official site.</b> Prepared by Axoniq Cyber for
+    AW Childs, 2 September 2026. Nothing here is submitted or stored. To reach AW Childs,
+    visit <a href="https://awchilds.co.uk/">awchilds.co.uk</a>.</p>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brand">AW Childs<span>.</span></div>
+    <nav>
+      <a href="#valuation">Free valuation</a>
+      <a href="#how">How it works</a>
+      <a href="#areas">Areas</a>
+      <a href="#properties">Properties</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="valuation">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Barbican · Clerkenwell · Farringdon</p>
+      <h1>What is your flat<br><em>actually</em> worth?</h1>
+      <p class="hero-lede">A free, no-obligation valuation from an agent who works these
+        postcodes and no others. We will tell you what your property is worth today, what it
+        would let for, and what we would change before it goes on the market.</p>
+      <ul class="assure">
+        <li>No obligation</li>
+        <li>Same-day reply</li>
+        <li>We only cover EC1, EC2, WC1, N1 and E3</li>
+      </ul>
+    </div>
+
+    <form class="card" id="valForm" novalidate>
+      <div>
+        <h2>Book your valuation</h2>
+        <p class="sub">Takes about a minute. We reply the same working day.</p>
+      </div>
+      <div class="fields two">
+        <label>Your name
+          <input type="text" name="name" autocomplete="name" placeholder="Jane Whitfield">
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" autocomplete="tel" placeholder="07700 900123">
+        </label>
+      </div>
+      <label>Email
+        <input type="email" name="email" autocomplete="email" placeholder="jane@example.com">
+      </label>
+      <label>Property address
+        <input type="text" name="address" autocomplete="street-address" placeholder="Flat 4, Seddon House, Barbican, EC2Y">
+      </label>
+      <div class="fields two">
+        <label>Bedrooms
+          <select name="bedrooms">
+            <option>Studio</option><option>1</option><option selected>2</option>
+            <option>3</option><option>4+</option>
+          </select>
+        </label>
+        <label>I want to
+          <select name="intent">
+            <option>Sell</option><option>Let</option><option>Both — tell me which is better</option>
+          </select>
+        </label>
+      </div>
+      <label>Anything we should know
+        <textarea name="notes" placeholder="Lease length, recent works, tenants in situ, timescales&hellip;"></textarea>
+      </label>
+      <button class="btn btn-accent" type="submit">Request my valuation</button>
+      <p class="demo-note">Demonstration only &mdash; this concept page does not send or store
+        anything. On the live version this arrives in the office inbox and as a text message
+        within seconds.</p>
+      <div class="out" id="valOut" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps, and the first one is done</h2>
+      <p>No call centre, no chasing, and no valuation that arrives a fortnight later when
+        you have already instructed somebody else.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>You send the form</h3>
+        <p>Address, bedrooms, and whether you are selling or letting. That is enough for us
+          to start &mdash; everything else we can ask on the phone.</p>
+      </div>
+      <div class="step">
+        <h3>We reply the same working day</h3>
+        <p>With a realistic figure based on what has actually sold and let on your street,
+          not an automated estimate pulled from a national average.</p>
+      </div>
+      <div class="step">
+        <h3>We visit, if you want us to</h3>
+        <p>Twenty minutes, at a time that suits you. You are under no obligation to
+          instruct us, and we will say so on the doorstep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="areas">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Where we work</p>
+      <h2>Five neighbourhoods, properly known</h2>
+      <p>A community-minded estate agent specialising in selling and letting residential
+        property in a small, well-defined patch of central London.</p>
+    </div>
+    <ul class="areas">
+      <li>The Barbican</li>
+      <li>Clerkenwell</li>
+      <li>Farringdon</li>
+      <li>Bloomsbury</li>
+      <li>City of London</li>
+      <li>Islington</li>
+    </ul>
+    <div class="quote" style="margin-top:2.6rem">
+      <p>&ldquo;We deal with every type of property, and we understand that each client is
+        different. Our knowledge of the market and prompt, professional service is how we
+        built this business.&rdquo;</p>
+      <p class="who">AW CHILDS &mdash; IN THEIR OWN WORDS, FROM THEIR SITE</p>
+    </div>
+  </div>
+</section>
+
+<section id="properties">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Recently listed</p>
+      <h2>What we are selling right now</h2>
+    </div>
+    <div class="listings">
+      <article class="listing">
+        <span class="status">For sale</span>
+        <h3>Seddon House, Barbican</h3>
+        <p>Own a piece of architectural history &mdash; a flat inside the Barbican Estate itself.</p>
+      </article>
+      <article class="listing">
+        <span class="status">For sale</span>
+        <h3>Clerkenwell, EC1R</h3>
+        <p>Two-bedroom flat in the heart of Clerkenwell.</p>
+      </article>
+      <article class="listing">
+        <span class="status">For sale</span>
+        <h3>Kings Cross Road, WC1X</h3>
+        <p>Central, well connected, and a short walk from Farringdon.</p>
+      </article>
+      <article class="listing">
+        <span class="status">For sale</span>
+        <h3>Swanton Road, E3</h3>
+        <p>East London, with the space that central postcodes cannot offer.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="findings">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Prepared by Axoniq Cyber</p>
+      <h2>Why this page exists</h2>
+      <p>Checked on awchilds.co.uk on 2 September 2026. Anyone can reproduce this in
+        under a minute.</p>
+    </div>
+    <div class="f-grid">
+      <article class="f-item">
+        <span class="f-tag">Verified twice</span>
+        <h3>The &ldquo;Ask Now&rdquo; button returns a 404</h3>
+        <p>On the home page, under <b>Free Valuation</b>, the <b>Ask Now</b> button points to
+          <code>awchilds.co.uk/get-valuations/</code>. That address returns
+          <code>HTTP 404</code>, page title <code>Page not found</code>. Probed twice on
+          2 September 2026.</p>
+      </article>
+      <article class="f-item">
+        <span class="f-tag">Why it costs money</span>
+        <h3>For an estate agent, the valuation request is the lead</h3>
+        <p>It is the single most valuable action on the site &mdash; a homeowner telling you
+          they are thinking of selling. Anyone clicking the most important button on the site
+          currently lands on an error page.</p>
+      </article>
+      <article class="f-item">
+        <span class="f-tag">And it is paid traffic</span>
+        <h3>Ad tracking is live on the site</h3>
+        <p>Which means some of the people reaching that 404 were paid for.</p>
+      </article>
+      <article class="f-item">
+        <span class="f-tag">In fairness</span>
+        <h3>The rest of the capture works</h3>
+        <p>The contact page and the free-valuation page both carry working forms. This is one
+          broken link on the home page, not a broken website &mdash; which is exactly why it is
+          worth fixing today rather than rebuilding.</p>
+      </article>
+      <article class="f-item">
+        <span class="f-tag">This page</span>
+        <h3>Built as the destination that button should have</h3>
+        <p>A valuation request page with the form above the fold, on a route that resolves.
+          Your branding, photography and real listings drop straight in.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="col">
+      <span class="h">AW Childs</span>
+      <span>Estate &amp; letting agents, Farringdon</span>
+      <a href="https://awchilds.co.uk/">awchilds.co.uk</a>
+    </div>
+    <div class="col">
+      <span class="h">This document</span>
+      <span>A concept by Axoniq Cyber</span>
+      <span>2 September 2026 &middot; not an official site</span>
+    </div>
+    <div class="col">
+      <span class="h">Prepared by</span>
+      <a href="https://immahmuteti-oss.github.io/axoniq/">Axoniq Cyber</a>
+      <span>Emmanuel Muteti</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById("valForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var out = document.getElementById("valOut");
+  out.textContent = "This is a concept page, so nothing was sent. On the live version this " +
+    "request would reach the office inbox and a mobile within seconds, and the address you " +
+    "typed would already be attached to it.";
+  out.classList.add("on");
+});
+</script>
+</body>
+</html>
